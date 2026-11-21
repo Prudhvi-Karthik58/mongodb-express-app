@@ -7,6 +7,7 @@ const port = process.env.PORT || 7000;
 // MongoDB connection
 const mongoUrl =
   process.env.MONGO_URI ||
+  process.env.MONGO_FULL_URI ||
   process.env.MONGODB_URI ||
   "mongodb://admin:admin123@localhost:27017";
 const databaseName = process.env.DB_NAME || "library_db";
